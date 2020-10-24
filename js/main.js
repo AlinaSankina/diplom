@@ -3,12 +3,6 @@ $(document).ready(function () {
     new WOW({animateClass: 'animate__animated',}).init();
 
 
-    $('.gallery-item').magnificPopup({
-        type: 'image'
-        // other options
-    });
-
-
     $("#accordion").accordion();
 
 
@@ -257,7 +251,7 @@ $(document).ready(function () {
             loader.css('display', 'flex');
             $.ajax({
                 type: 'post',
-                url: 'mail.php',
+                url: 'https://itlogia.ru/test/checkout',
                 data: 'name=' + name.val() + '&service=' + service.val() + '&dateAndTime=' + dateAndTime.val() + '&phone=' + phone.val(),
                 success: () => {
                     $('#reservation-sent').css('display', 'flex');
@@ -296,17 +290,24 @@ $(document).ready(function () {
             loader.css('display', 'flex');
             $.ajax({
                 type: 'post',
-                url: 'mail.php',
+                url: 'https://itlogia.ru/test/checkout',
                 data: 'phone=' + phone.val(),
                 success: () => {
                     $('#thanks').css('display', 'block');
                     $('#form').css('display', 'none');
+                    $('#faq-action').css('display', 'none');
                 },
             })
             .done(function (message) {
                     loader.hide();
                 })
             }
+    });
+
+
+    $('.gallery-item').magnificPopup({
+        type: 'image'
+        // other options
     });
 
 

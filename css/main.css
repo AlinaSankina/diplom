@@ -30,16 +30,18 @@ body {
 #header {
     width: 100%;
     position: relative;
+    background: linear-gradient(180deg, rgb(206, 205, 205), rgba(255, 255, 255, 0.7));
+    box-shadow: 0px 2px 16.56px 1.44px rgba(255, 255, 255, 0.7);
 }
 
-#header #blur {
-    height: 100%;
-    background: rgb(222, 219, 220);
-    width: 100%;
-    position: absolute;
-    filter: blur(10px);
-    z-index: -1;
-}
+/*#header #blur {*/
+/*    height: 100%;*/
+/*    background: rgb(222, 219, 220);*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    filter: blur(10px);*/
+/*    z-index: -1;*/
+/*}*/
 
 #header #header-container {
     max-width: 1200px;
@@ -65,15 +67,9 @@ body {
     border-bottom: 1px solid transparent;
 }
 
-#menu a.active {
-    font-size: 13px;
-    font-family: "Nunito-ExtraBold", sans-serif;
-    color: rgb(114, 17, 99);
-    border-bottom: 1px solid rgb(114, 17, 99);
-}
-
 #menu a:hover {
     color: rgb(114, 17, 99);
+    border-bottom: 1px solid rgb(114, 17, 99);
 }
 
 .logo {
@@ -106,12 +102,12 @@ body {
 
 }
 
-#main-blur {
-    height: 2%;
-    background: rgb(97 95 96);
-    width: 100%;
-    filter: blur(10px);
-}
+/*#main-blur {*/
+/*    height: 2%;*/
+/*    background: rgb(97 95 96);*/
+/*    width: 100%;*/
+/*    filter: blur(10px);*/
+/*}*/
 
 #main-container {
     max-width: 1200px;
@@ -847,8 +843,8 @@ body {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgb(37, 24, 31);
-    opacity: 0.85;
+    background-color: rgba(37, 24, 31, 0.85);
+    /*opacity: 0.85;*/
     display: none;
     justify-content: center;
     align-items: center;
@@ -860,7 +856,7 @@ body {
     padding: 60px;
     position: relative;
     box-sizing: border-box;
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 #reservation #reservation-cancel {
@@ -970,7 +966,7 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .lds-ellipsis {
